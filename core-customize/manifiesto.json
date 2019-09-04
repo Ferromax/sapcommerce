@@ -64,24 +64,16 @@
     ],
     "properties": [
         {
-            "key": "website.electronics.http",
-            "value": "${HTTTP ELECTRONICS URL}"
-        },
-        {
-            "key": "website.electronics.https",
-            "value": "${HTTPS ELECTRONICS URL}"
-        },
-        {
             "key": "keygen.customer.sap_customer_id.start",
-            "value": "${SAP-CUSTOMER-ID.START}"
+            "value": 9000000000
         },
         {
             "key": "keygen.customer.sap_contact_id.start",
-            "value": "${SAP-CONTACT-ID.START}"
+            "value": 9000000000
         },
         {
             "key": "keygen.order.code.start",
-            "value": "${KEYGEN-CODE-START}"
+            "value": 9000000000
         },
         {
             "key": "apcustomerexchange.outbound.datahub.feed",

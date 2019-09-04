@@ -1,0 +1,8 @@
+{
+    "applications": [
+        {
+            "name": "Hola Mundo",
+            "path": "js-storefront/dist/WidgetChat/index.html"
+        }
+    ]
+}
