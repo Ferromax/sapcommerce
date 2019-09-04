@@ -69,11 +69,11 @@
         },
         {
             "key": "keygen.customer.sap_contact_id.start",
-            "value": 9000000000
+            "value": 8000000000
         },
         {
             "key": "keygen.order.code.start",
-            "value": 9000000000
+            "value": 7000000000
         },
         {
             "key": "apcustomerexchange.outbound.datahub.feed",
