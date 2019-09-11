@@ -1,5 +1,5 @@
 {
-    "commerceSuiteVersion": "1905.0",
+    "commerceSuiteVersion": "1905",
     "extensions": [
         "modeltacceleratorservices",
         "electronicsstore",
@@ -16,7 +16,21 @@
         "yacceleratorcockpits",
         "yacceleratorinitialdata",
         "yacceleratorordermanagement",
-        "yacceleratorstorefront"
+        "yacceleratorstorefront",
+        "adaptivesearchbackoffice",
+        "adaptivesearchsamplesaddon",
+        "adaptivesearchwebservices",
+        "cmswebservices",
+        "textfieldconfiguratortemplatebackoffice",
+        "textfieldconfiguratortemplateaddon",
+        "smarteditwebservices",
+        "smarteditaddon",
+        "permissionswebservices",
+        "ycmssmartedit",
+        "cmssmartedit",
+        "cmssmarteditwebservices",
+        "cmsbackoffice",
+        "personalizationsmartedit"
     ],
          "aspects": [
         {
@@ -37,23 +51,6 @@
             ]
         },
         {
-            "name": "accstorefront",
-            "webapps": [
-                {
-                    "name": "mediaweb",
-                    "contextPath": "/medias"
-                },
-                {
-                    "name": "yacceleratorstorefront",
-                    "contextPath": "/yacceleratorstorefront"
-                },
-                {
-                    "name": "acceleratorservices",
-                    "contextPath": "/acceleratorservices"
-                }
-            ]
-        },
-        {
             "name": "backgroundProcessing",
             "properties": [],
             "webapps": [
@@ -64,6 +61,46 @@
                 {
                     "name": "mediaweb",
                     "contextPath": "/medias"
+                }
+            ]
+        },
+        {
+            "name": "accstorefront",
+            "properties": [
+                {
+                    "key": "spring.session.enabled",
+                    "value": "true"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.save",
+                    "value":"async"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.name",
+                    "value": "JSESSIONID"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.path",
+                    "value": "/"
+                },
+                {
+                    "key":"storefrontContextRoot",
+                    "value":""
+                } 
+
+            ],
+            "webapps": [
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
+                    "name": "mycustomstorefront",
+                    "contextPath": ""
+                },
+                {
+                    "name": "acceleratorservices",
+                    "contextPath": "/acceleratorservices"
                 }
             ]
         }
