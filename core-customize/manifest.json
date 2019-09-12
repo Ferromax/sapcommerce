@@ -16,7 +16,6 @@
         "yacceleratorcockpits",
         "yacceleratorinitialdata",
         "yacceleratorordermanagement",
-        "yacceleratorstorefront",
         "adaptivesearchbackoffice",
         "adaptivesearchsamplesaddon",
         "adaptivesearchwebservices",
@@ -79,7 +78,7 @@
             "contextPath": "/medias"
             },
             {
-            "name": "mycustomstorefront",
+            "name": "yacceleratorstorefront",
             "contextPath": ""
             },
             {
