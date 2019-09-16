@@ -1,0 +1,165 @@
+{
+    "commerceSuiteVersion": "1905",
+    "extensions": [
+        "modeltacceleratorservices",
+        "electronicsstore",
+        "backoffice",
+        "b2bcommercebackoffice",
+        "powertoolsstore",
+        "solrserver",
+        "b2bacceleratoraddon",
+        "ordermanagementaddon",
+        "orderselfserviceaddon",
+        "ordermanagementwebservices",
+        "b2bordermanagementwebservices",
+        "yb2bacceleratorstorefront",
+        "yacceleratorcockpits",
+        "yacceleratorinitialdata",
+        "yacceleratorordermanagement",
+        "yacceleratorstorefront",
+        "adaptivesearchbackoffice",
+        "adaptivesearchsamplesaddon",
+        "adaptivesearchwebservices",
+        "cmswebservices",
+        "textfieldconfiguratortemplatebackoffice",
+        "textfieldconfiguratortemplateaddon",
+        "smarteditwebservices",
+        "smarteditaddon",
+        "permissionswebservices",
+        "ycmssmartedit",
+        "cmssmartedit",
+        "cmssmarteditwebservices",
+        "cmsbackoffice",
+        "personalizationsmartedit",
+        "previewwebservices",
+        "smartedit",
+        "ysmarteditmodule",
+        "multicountrysampledataaddon"
+
+    ],"solr": {
+        "location": "config/server/solr"
+    },
+    "languages" : {
+        "location": "_LANGUAGES_"
+    },  "properties": [
+        {
+            "key": "yb2bacceleratorstorefront.webroot",
+            "value": "/yb2bacceleratorstorefront"
+        }
+    ],
+    "storefrontAddons": [
+        {  
+              "addon": "smarteditaddon",
+              "storefront": " yb2bacceleratorstorefront ",
+              "template": "yacceleratorstorefront"
+          },
+          {  
+    	      "addon":  "multicountrysampledataaddon",
+              "storefront": " yb2bacceleratorstorefront ",
+              "template": "yacceleratorstorefront"
+          },
+          {
+            "addon": "pcmbackofficesamplesaddon",
+            "storefront": "yb2bacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+          },
+          {  
+            "addon":  "b2bacceleratoraddon",
+            "storefront": " yb2bacceleratorstorefront ",
+            "template": "yacceleratorstorefront"
+        },
+        {  
+            "addon":  "ordermanagementaddon",
+            "storefront": " yb2bacceleratorstorefront ",
+            "template": "yacceleratorstorefront"
+        },
+        {  
+            "addon":  "orderselfserviceaddon",
+            "storefront": " yb2bacceleratorstorefront ",
+            "template": "yacceleratorstorefront"
+        },
+        {  
+            "addon":  "adaptivesearchsamplesaddon",
+            "storefront": " yb2bacceleratorstorefront ",
+            "template": "yacceleratorstorefront"
+        },
+        {  
+            "addon":  "textfieldconfiguratortemplateaddon",
+            "storefront": " yb2bacceleratorstorefront ",
+            "template": "yacceleratorstorefront"
+        }
+
+      ], "aspects": [
+        {
+            "name": "backoffice",
+            "webapps": [
+                {
+                    "name": "hac",
+                    "contextPath": "/hac"
+                },
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
+                    "name": "backoffice",
+                    "contextPath": ""
+                }
+            ]
+        },
+        {
+            "name": "backgroundProcessing",
+            "properties": [],
+            "webapps": [
+                {
+                    "name": "hac",
+                    "contextPath": ""
+                },
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                }
+            ]
+        },
+        {
+            "name": "accstorefront",
+            "properties": [
+                {
+                    "key": "spring.session.enabled",
+                    "value": "true"
+                },
+                {
+                    "key": "spring.session.yb2bacceleratorstorefront.save",
+                    "value":"async"
+                },
+                {
+                    "key": "spring.session.yb2bacceleratorstorefront.cookie.name",
+                    "value": "JSESSIONID"
+                },
+                {
+                    "key": "spring.session.yb2bacceleratorstorefront.cookie.path",
+                    "value": "/yb2bacceleratorstorefront"
+                }
+
+            ],
+            "webapps": [
+                {
+                    "name": "hac",
+                    "contextPath": "/hac"
+                },
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
+                    "name": "yb2bacceleratorstorefront",
+                    "contextPath": "/yb2bacceleratorstorefront"
+                },
+                {
+                    "name": "acceleratorservices",
+                    "contextPath": "/acceleratorservices"
+                }
+            ]
+        }
+    ]
+}
