@@ -42,7 +42,11 @@
     "languages" : {
         "location": "_LANGUAGES_"
     }, 
-     "properties": [
+    "properties": [
+        {
+            "key": "yacceleratorstorefront.webroot",
+            "value": "/yacceleratorstorefront"
+        },
         {
             "key": "yb2bacceleratorstorefront.webroot",
             "value": "/yb2bacceleratorstorefront"
@@ -130,6 +134,18 @@
                     "value": "true"
                 },
                 {
+                    "key": "spring.session.yacceleratorstorefront.save",
+                    "value":"async"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.name",
+                    "value": "JSESSIONID"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.path",
+                    "value": "/yacceleratorstorefront"
+                },
+                {
                     "key": "spring.session.yb2bacceleratorstorefront.save",
                     "value":"async"
                 },
@@ -141,7 +157,6 @@
                     "key": "spring.session.yb2bacceleratorstorefront.cookie.path",
                     "value": "/yb2bacceleratorstorefront"
                 }
-
             ],
             "webapps": [
                 {
@@ -155,6 +170,10 @@
                 {
                     "name": "yb2bacceleratorstorefront",
                     "contextPath": "/yb2bacceleratorstorefront"
+                },
+                {
+                    "name": "yacceleratorstorefront",
+                    "contextPath": "/yacceleratorstorefront"
                 },
                 {
                     "name": "acceleratorservices",
