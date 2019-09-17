@@ -1,25 +1,42 @@
 {
     "commerceSuiteVersion": "1905",
     "extensions": [
+
+        "adaptivesearchsolr",
+        "adaptivesearchbackoffice",
+        "adaptivesearchsamplesaddon",
+        "adaptivesearchwebservices",
+        "solrfacetsearchbackoffice",
+
+        "yacceleratorbackoffice",
+        "yacceleratorinitialdata",
+        "yacceleratorfulfilmentprocess",
+        "yacceleratorcockpits",
+        "ycommercewebservices",
+        "ycommercewebservicestest",
+
+        "powertoolsstore",
+        "solrserver",
+
         "modeltacceleratorservices",
         "electronicsstore",
         "backoffice",
         "b2bcommercebackoffice",
-        "powertoolsstore",
-        "solrserver",
+        "b2badmincockpit",
+        "commerceorgaddon",
+        
+        
         "b2bacceleratoraddon",
         "ordermanagementaddon",
         "orderselfserviceaddon",
         "ordermanagementwebservices",
         "b2bordermanagementwebservices",
-        "yb2bacceleratorstorefront",
-        "yacceleratorcockpits",
-        "yacceleratorinitialdata",
+        
+        
         "yacceleratorordermanagement",
         "yacceleratorstorefront",
-        "adaptivesearchbackoffice",
-        "adaptivesearchsamplesaddon",
-        "adaptivesearchwebservices",
+        
+       
         "cmswebservices",
         "textfieldconfiguratortemplatebackoffice",
         "textfieldconfiguratortemplateaddon",
