@@ -42,14 +42,12 @@
         "smarteditwebservices",
         "smarteditaddon",
         "permissionswebservices",
-        "ycmssmartedit",
         "cmssmartedit",
         "cmssmarteditwebservices",
         "cmsbackoffice",
         "personalizationsmartedit",
         "previewwebservices",
         "smartedit",
-        "ysmarteditmodule",
         "multicountrysampledataaddon"
     ],
     "solr": {
