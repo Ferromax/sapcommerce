@@ -4,22 +4,21 @@
         "ordermanagementaddon", 
         "orderselfserviceaddon",
         "ordermanagementwebservices" ,
-        "b2bordermanagementwebservices",
-        "b2bacceleratoraddon",
+        
         "warehousing",
         "warehousingbackoffice",
         "warehousingwebservices",
         "adaptivesearchsolr",
         "adaptivesearchbackoffice",
         "adaptivesearchsamplesaddon",
-        "b2bcommercebackoffice",
+        
         "commerceservicesbackoffice",
         "solrfacetsearchbackoffice",
         "yacceleratorbackoffice",
         "yacceleratorinitialdata",
         "yacceleratorordermanagement",
         "yacceleratorstorefront",
-        "yb2bacceleratorstorefront",
+        
         "yaddon",
         "ycommercewebservices",
         "apparelstore",
@@ -78,13 +77,6 @@
             { 
                 "key": "yacceleratorstorefront.webroot", 
                 "value": "/yacceleratorstorefront" 
-            },
-            {   "key": "yb2bacceleratorstorefront.webroot", 
-                "value": "/yb2bacceleratorstorefront" 
-            },
-            {
-                "key": "yb2bacceleratorstorefront.illegalrequirementstest.excluded",
-                "value" : "true"
             }
         ], 
     "storefrontAddons": [
@@ -132,16 +124,6 @@
       "addon": "smarteditaddon",
       "storefront": "yacceleratorstorefront",
       "template": "yacceleratorstorefront"
-    },
-    {  
-        "addon": "b2bacceleratoraddon",
-        "storefront": "yb2bacceleratorstorefront",
-        "template": "yacceleratorstorefront"
-    },
-    {  
-        "addon": "commerceorgaddon",
-        "storefront": "yb2bacceleratorstorefront",
-        "template": "yacceleratorstorefront"
     }
       ], "aspects": [
         {
@@ -179,18 +161,6 @@
                 {
                     "key": "spring.session.yacceleratorstorefront.cookie.path",
                     "value": "/yacceleratorstorefront"
-                },
-                {
-                    "key": "spring.session.yb2bacceleratorstorefront.save",
-                    "value":"async"
-                },
-                {
-                    "key": "spring.session.yb2bacceleratorstorefront.cookie.name",
-                    "value": "JSESSIONID"
-                },
-                {
-                    "key": "spring.session.yb2bacceleratorstorefront.cookie.path",
-                    "value": "/yb2bacceleratorstorefront"
                 }
             ],
             "webapps": [
@@ -201,10 +171,6 @@
                 {
                     "name": "mediaweb",
                     "contextPath": "/medias"
-                },
-                {
-                    "name": "yb2bacceleratorstorefront",
-                    "contextPath": "/yb2bacceleratorstorefront"
                 },
                 {
                     "name": "yacceleratorstorefront",
