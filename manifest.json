@@ -10,7 +10,7 @@
                 "value": "/yb2bacceleratorstorefront" 
             }],
             "extensions": {
-            "location": "/config/localextensions.xml",
+            "location": "config/localextensions.xml",
             "exclude": [
                 "ycommercewebservicestest"
             ]
