@@ -1,23 +1,23 @@
 {
     "commerceSuiteVersion": "1905",
     "useConfig": {
-        "properties":
+        "properties": [
             {
                 "location": "/config/local.properties"
             }
+        ],"extensions": {
+            "location": "/config/localextensions.xml",
+            "exclude": [
+                "ycommercewebservicestest"
+            ]
         },
-    "extensions": {
-        "location": "/config/localextensions.xml",
-        "exclude": [
-            "ycommercewebservicestest"
-        ]
-    },
-    "solr": {
-        "location": "config/server/solr"
-    },
-    "languages" : {
-        "location": "_LANGUAGES_"
-    }, 
+        "solr": {
+            "location": "config/server/solr"
+        },
+        "languages" : {
+            "location": "_LANGUAGES_"
+        }
+        }, 
     "storefrontAddons": [
         {  
             "addon": "ordermanagementaddon",
