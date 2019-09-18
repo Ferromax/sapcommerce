@@ -1,11 +1,15 @@
 {
     "commerceSuiteVersion": "1905",
     "useConfig": {
-        "properties": [
-            {
-                "location": "/config/local.properties"
-            }
-        ],"extensions": {
+        "properties": [ 
+            { 
+                "key": "yacceleratorstorefront.webroot", 
+                "value": "/yacceleratorstorefront" 
+            },
+            { "key": "yb2bacceleratorstorefront.webroot", 
+                "value": "/yb2bacceleratorstorefront" 
+            }],
+            "extensions": {
             "location": "/config/localextensions.xml",
             "exclude": [
                 "ycommercewebservicestest"
