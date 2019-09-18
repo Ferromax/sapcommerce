@@ -1,11 +1,10 @@
 {
     "commerceSuiteVersion": "1905",
     "useConfig": {
-        "properties": [
+        "properties":
             {
                 "location": "/config/local.properties"
             }
-        ]
         },
     "extensions": {
         "location": "/config/localextensions.xml",
