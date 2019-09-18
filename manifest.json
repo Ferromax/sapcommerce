@@ -1,27 +1,87 @@
 {
     "commerceSuiteVersion": "1905",
-    "useConfig": {
-        "properties": [ 
+     "extensions": [
+        "ordermanagementaddon", 
+        "orderselfserviceaddon",
+        "ordermanagementwebservices" ,
+        "b2bordermanagementwebservices",
+        "warehousing",
+        "warehousingbackoffice",
+        "warehousingwebservices",
+        "adaptivesearchsolr",
+        "adaptivesearchbackoffice",
+        "adaptivesearchsamplesaddon",
+        "b2bcommercebackoffice",
+        "commerceservicesbackoffice",
+        "solrfacetsearchbackoffice",
+        "yacceleratorbackoffice",
+        "yacceleratorinitialdata",
+        "yacceleratorordermanagement",
+        "yacceleratorstorefront",
+        "yb2bacceleratorstorefront",
+        "yaddon",
+        "ycommercewebservices",
+        "apparelstore",
+        "electronicsstore",
+        "powertoolsstore",
+        "solrserver",
+        "commerceorgaddon",
+        "commerceorgsamplesaddon",
+        "assistedservicestorefront",
+        "assistedservicewebservices",
+        "customerticketingaddon",
+        "customersupportbackoffice",
+        "ticketsystembackoffice",
+        "consignmenttrackingbackoffice",
+        "rulebuilderbackoffice",
+        "couponbackoffice",
+        "droolsruleengineservices",
+        "couponfacades",
+        "promotionenginesamplesaddon",
+        "consignmenttrackingaddon",
+        "pcmbackofficesamplesaddon",
+        "consignmenttrackingoccaddon",
+        "outboundservices",
+        "outboundsync",
+        "odata2webservices",
+        "odata2webservicesfeaturetests",
+        "integrationbackoffice",
+        "integrationmonitoringbackoffice",
+        "outboundsyncbackoffice",
+        "kymaintegrationbackoffice",
+        "xyformsbackoffice",
+        "xyformsstorefrontcommons",
+        "xyformssamples",
+        "xyformsweb",
+        "orbeonweb",
+        "entitlementfacades",
+        "entitlementbackoffice",
+        "cmswebservices",
+        "smarteditwebservices",
+        "cmssmarteditwebservices",
+        "permissionswebservices",
+        "previewwebservices",
+        "smarteditaddon",
+        "cmssmartedit",
+        "cmsbackoffice",
+        "cmsoccaddon",
+        "multicountrysampledataaddon"
+        ],
+        "solr": {
+            "location": "config/server/solr"
+        },
+        "languages" : {
+            "location": "_LANGUAGES_"
+        },
+         "properties": [ 
             { 
                 "key": "yacceleratorstorefront.webroot", 
                 "value": "/yacceleratorstorefront" 
             },
             { "key": "yb2bacceleratorstorefront.webroot", 
                 "value": "/yb2bacceleratorstorefront" 
-            }],
-            "extensions": {
-            "location": "config/localextensions.xml",
-            "exclude": [
-                "ycommercewebservicestest"
-            ]
-        },
-        "solr": {
-            "location": "config/server/solr"
-        },
-        "languages" : {
-            "location": "_LANGUAGES_"
-        }
-        }, 
+            }
+        ], 
     "storefrontAddons": [
         {  
             "addon": "ordermanagementaddon",
