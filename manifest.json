@@ -5,6 +5,7 @@
         "orderselfserviceaddon",
         "ordermanagementwebservices" ,
         "b2bordermanagementwebservices",
+        "b2bacceleratoraddon",
         "warehousing",
         "warehousingbackoffice",
         "warehousingwebservices",
@@ -78,8 +79,12 @@
                 "key": "yacceleratorstorefront.webroot", 
                 "value": "/yacceleratorstorefront" 
             },
-            { "key": "yb2bacceleratorstorefront.webroot", 
+            {   "key": "yb2bacceleratorstorefront.webroot", 
                 "value": "/yb2bacceleratorstorefront" 
+            },
+            {
+                "key": "yb2bacceleratorstorefront.illegalrequirementstest.excluded",
+                "value" : "true"
             }
         ], 
     "storefrontAddons": [
