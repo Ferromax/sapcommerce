@@ -1,114 +1,80 @@
 {
     "commerceSuiteVersion": "1905",
-    "extensions": [
-
-        "adaptivesearchsolr",
-        "adaptivesearchbackoffice",
-        "adaptivesearchsamplesaddon",
-        "adaptivesearchwebservices",
-        "solrfacetsearchbackoffice",
-
-        "yacceleratorbackoffice",
-        "yacceleratorinitialdata",
-        "yacceleratorfulfilmentprocess",
-        "yacceleratorcockpits",
-        "ycommercewebservices",
-        "ycommercewebservicestest",
-        "yb2bacceleratorstorefront",
-
-        "powertoolsstore",
-        "solrserver",
-
-        "modeltacceleratorservices",
-        "electronicsstore",
-        "backoffice",
-        "b2bcommercebackoffice",
-        "commerceorgaddon",
-        
-        
-        "b2bacceleratoraddon",
-        "ordermanagementaddon",
-        "orderselfserviceaddon",
-        "ordermanagementwebservices",
-        "b2bordermanagementwebservices",
-        
-        
-        "yacceleratorordermanagement",
-        "yacceleratorstorefront",
-        
-       
-        "cmswebservices",
-        "textfieldconfiguratortemplatebackoffice",
-        "textfieldconfiguratortemplateaddon",
-        "smarteditwebservices",
-        "smarteditaddon",
-        "permissionswebservices",
-        "cmssmartedit",
-        "cmssmarteditwebservices",
-        "cmsbackoffice",
-        "personalizationsmartedit",
-        "previewwebservices",
-        "smartedit",
-        "multicountrysampledataaddon"
-    ],
+    "useConfig": {
+        "properties": [
+            {
+                "location": "/config/local.properties"
+            }
+        ]
+        },
+    "extensions": {
+        "location": "/config/localextensions.xml",
+        "exclude": [
+            "ycommercewebservicestest"
+        ]
+    },
     "solr": {
         "location": "config/server/solr"
     },
     "languages" : {
         "location": "_LANGUAGES_"
     }, 
-    "properties": [
-        {
-            "key": "yacceleratorstorefront.webroot",
-            "value": "/yacceleratorstorefront"
-        },
-        {
-            "key": "yb2bacceleratorstorefront.webroot",
-            "value": "/yb2bacceleratorstorefront"
-        }
-    ],
     "storefrontAddons": [
         {  
-              "addon": "smarteditaddon",
-              "storefront": "yb2bacceleratorstorefront",
+            "addon": "ordermanagementaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {  
+              "addon": "orderselfserviceaddon",
+              "storefront": "yacceleratorstorefront",
               "template": "yacceleratorstorefront"
-          },
-          {  
-    	      "addon":  "multicountrysampledataaddon",
-              "storefront": "yb2bacceleratorstorefront",
+        },
+        {  
+            "addon": "adaptivesearchsamplesaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {  
+              "addon": "promotionenginesamplesaddon",
+              "storefront": "yacceleratorstorefront",
               "template": "yacceleratorstorefront"
-          },
-          {
+        },
+        {  
             "addon": "pcmbackofficesamplesaddon",
-            "storefront": "yb2bacceleratorstorefront",
+            "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
-          },
-          {  
-            "addon":  "b2bacceleratoraddon",
-            "storefront": "yb2bacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
+        },  
         {  
-            "addon":  "ordermanagementaddon",
-            "storefront": "yb2bacceleratorstorefront",
+            "addon": "consignmenttrackingoccaddon",
+            "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
-        },
-        {  
-            "addon":  "orderselfserviceaddon",
-            "storefront": "yb2bacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {  
-            "addon":  "adaptivesearchsamplesaddon",
-            "storefront": "yb2bacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {  
-            "addon":  "textfieldconfiguratortemplateaddon",
-            "storefront": "yb2bacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        }
-
+      },
+      {  
+          "addon": "smarteditaddon",
+          "storefront": "yacceleratorstorefront",
+          "template": "yacceleratorstorefront"
+      },
+      {  
+        "addon": "consignmenttrackingoccaddon",
+        "storefront": "yacceleratorstorefront",
+        "template": "yacceleratorstorefront"
+     },
+     {  
+      "addon": "smarteditaddon",
+      "storefront": "yacceleratorstorefront",
+      "template": "yacceleratorstorefront"
+    },
+    {  
+        "addon": "b2bacceleratoraddon",
+        "storefront": "yb2bacceleratorstorefront",
+        "template": "yacceleratorstorefront"
+    },
+    {  
+        "addon": "commerceorgaddon",
+        "storefront": "yb2bacceleratorstorefront",
+        "template": "yacceleratorstorefront"
+    }
       ], "aspects": [
         {
             "name": "backoffice",
@@ -127,21 +93,7 @@
                 }
             ]
         },
-        {
-            "name": "backgroundProcessing",
-            "properties": [],
-            "webapps": [
-                {
-                    "name": "hac",
-                    "contextPath": ""
-                },
-                {
-                    "name": "mediaweb",
-                    "contextPath": "/medias"
-                }
-            ]
-        },
-        {
+        { 
             "name": "accstorefront",
             "properties": [
                 {
@@ -193,6 +145,20 @@
                 {
                     "name": "acceleratorservices",
                     "contextPath": "/acceleratorservices"
+                }
+            ]
+        },
+        {
+            "name": "backgroundProcessing",
+            "properties": [],
+            "webapps": [
+                {
+                    "name": "hac",
+                    "contextPath": ""
+                },
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
                 }
             ]
         }
